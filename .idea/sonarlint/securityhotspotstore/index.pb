@@ -17,3 +17,7 @@ PCrud-service/src/main/java/com/ucc/Crudservice/controller/ProductController.jav
 PCrud-service/src/main/java/com/ucc/Crudservice/config/DefaultSecurityConfig.java,a\3\a31624897c453d1eb73640533424edee5095266f
 y
 ICrud-service/src/main/java/com/ucc/Crudservice/Swagger/SwaggerConfig.java,9\5\9500d591d9f79ec7a8624928f4a8b7e896ba8e3a
+
+OCrud-service/src/test/java/com/ucc/Crudservice/CrudServiceApplicationTests.java,c\7\c73c0088dd441d058ccff9f65d45df17fe3546a8
+~
+NCrud-service/src/test/java/com/ucc/Crudservice/service/ProductServiceTest.java,9\b\9bbfa5fd6b079ef17f83366d97d6320f3dc92196
