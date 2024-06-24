@@ -1,0 +1,101 @@
+springdoc:
+  api-docs:
+    path: /documentacion-api
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+
+info:
+  title: "API de productos"
+  description: "API encargada de realizar peticiones a una base de datos de productos"
+  version: "1.0"
+  contact:
+    name: "Santiago Servera"
+    email: "santiagoservera21@gmail.com"
+  license:
+    name: "GitHub"
+    url: "https://github.com/santiagoservera"
+  termsOfServiceUrl: "http://www.example.com"
+
+paths:
+  /api/products:
+    get:
+      summary: "Obtiene todos los productos"
+      operationId: "getProducts"
+      responses:
+        '200':
+          description: "Lista de productos obtenida correctamente"
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/Product"
+    post:
+      summary: "Agrega un nuevo producto"
+      operationId: "addProduct"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Product"
+      responses:
+        '200':
+          description: "Producto agregado correctamente"
+        '400':
+          description: "Error de validación"
+    /{productId}:
+      delete:
+        summary: "Elimina un producto por ID"
+        operationId: "deleteProduct"
+        parameters:
+          - name: productId
+            in: path
+            required: true
+            schema:
+              type: "integer"
+              format: "int64"
+        responses:
+          '200':
+            description: "Producto eliminado correctamente"
+      put:
+        summary: "Actualiza un producto por ID"
+        operationId: "updateProduct"
+        parameters:
+          - name: productId
+            in: path
+            required: true
+            schema:
+              type: "integer"
+              format: "int64"
+        requestBody:
+          required: true
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Product"
+        responses:
+          '200':
+            description: "Producto actualizado correctamente"
+
+components:
+  schemas:
+    Product:
+      type: "object"
+      properties:
+        id:
+          type: "integer"
+          format: "int64"
+        name:
+          type: "string"
+        description:
+          type: "string"
+        price:
+          type: "number"
+          format: "double"
+      example:
+        id: 1
+        name: "Producto de ejemplo"
+        description: "Descripción del producto"
+        price: 99.99

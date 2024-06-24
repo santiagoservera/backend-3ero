@@ -13,3 +13,7 @@ z
 JCrud-service/src/main/java/com/ucc/Crudservice/service/ProductService.java,2\5\2504f5aa20efd020a72b60109807de28c28f3a93
 €
 PCrud-service/src/main/java/com/ucc/Crudservice/controller/ProductController.java,c\4\c422ef902eb0d68b4af1fa34921a33ba98351b82
+€
+PCrud-service/src/main/java/com/ucc/Crudservice/config/DefaultSecurityConfig.java,a\3\a31624897c453d1eb73640533424edee5095266f
+y
+ICrud-service/src/main/java/com/ucc/Crudservice/Swagger/SwaggerConfig.java,9\5\9500d591d9f79ec7a8624928f4a8b7e896ba8e3a
