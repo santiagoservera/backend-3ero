@@ -21,3 +21,13 @@ ICrud-service/src/main/java/com/ucc/Crudservice/Swagger/SwaggerConfig.java,9\5\
 OCrud-service/src/test/java/com/ucc/Crudservice/CrudServiceApplicationTests.java,c\7\c73c0088dd441d058ccff9f65d45df17fe3546a8
 ~
 NCrud-service/src/test/java/com/ucc/Crudservice/service/ProductServiceTest.java,9\b\9bbfa5fd6b079ef17f83366d97d6320f3dc92196
+|
+LCrud-service/src/main/java/com/ucc/Crudservice/config/JwtAuthEntryPoint.java,d\7\d7482b13a393ea7d5df16995dc23e995e1661570
+y
+ICrud-service/src/main/java/com/ucc/Crudservice/config/JwtUtilService.java,c\8\c82e855f8b824b6d9ebff5d3c405fee5afce3450
+q
+ACrud-service/src/main/java/com/ucc/Crudservice/rest/DemoRest.java,f\9\f94948deec397c6dc6c744b9cf0696cdbe663aff
+s
+CCrud-service/src/main/java/com/ucc/Crudservice/model/TokenInfo.java,a\3\a3965ceb4a5b44ff8e513504608230068c3d0361
+{
+KCrud-service/src/main/java/com/ucc/Crudservice/model/AuthenticationReq.java,4\8\487dd384cd9e1cbc9e3c5114f81912b31043e32d

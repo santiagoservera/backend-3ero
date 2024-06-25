@@ -3,6 +3,8 @@ package com.ucc.Crudservice.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.userdetails.User;
@@ -22,26 +24,40 @@ public class DefaultSecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .csrf(csrf -> csrf.disable()) // Deshabilitar CSRF usando el nuevo Customizer
+                .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(authz -> authz
-                        .requestMatchers(HttpMethod.GET, "/api/products").permitAll() // Permitir GET requests sin autenticación
-                        .requestMatchers(HttpMethod.POST, "/api/products").authenticated() // Requerir autenticación para POST
-                        .requestMatchers(HttpMethod.PUT, "/api/products").authenticated() // Requerir autenticación para PUT
-                        .requestMatchers(HttpMethod.DELETE, "/api/products").authenticated() // Requerir autenticación para DELETE
+                        .requestMatchers(HttpMethod.POST, "/api/products/authenticate").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/products").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/api/products").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.PUT, "/api/products").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.DELETE, "/api/products").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )
                 .httpBasic(withDefaults());
+
         return http.build();
     }
 
     @Bean
     public UserDetailsService userDetailsService() {
+        UserDetails userAdmin = User.builder()
+                .username("admin")
+                .password(passwordEncoder().encode("adminpass"))
+                .roles("ADMIN")
+                .build();
+
         UserDetails user = User.builder()
                 .username("user")
-                .password(passwordEncoder().encode("1234"))
+                .password(passwordEncoder().encode("userpass"))
                 .roles("USER")
                 .build();
-        return new InMemoryUserDetailsManager(user);
+
+        return new InMemoryUserDetailsManager(userAdmin, user);
+    }
+
+    @Bean
+    AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
+        return authenticationConfiguration.getAuthenticationManager();
     }
 
     @Bean

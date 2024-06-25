@@ -1,0 +1,118 @@
+openapi: 3.0.1
+info:
+  title: "Api de productos"
+  version: "1.0.0"
+  contact:
+    name: "Santiago Servera"
+    url: "https://www.linkedin.com/in/santiago-servera/"
+  description: "API para manejar información de productos."
+
+paths:
+  api/products:
+    get:
+      summary: Obtiene todos los productos
+      description: Retorna una lista de productos
+      responses:
+        '200':
+          description: Lista de productos obtenida correctamente
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Product"
+    post:
+      summary: Agrega un nuevo producto
+      description: Crea un nuevo producto
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Product"
+      responses:
+        '200':
+          description: Producto agregado correctamente
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Product"
+        '400':
+          description: Error de validación
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+
+  /api/products/{productId}:
+    put:
+      summary: Actualiza un producto por ID
+      description: Actualiza un producto existente por su ID
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Product"
+      responses:
+        '200':
+          description: Producto actualizado correctamente
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Product"
+        '400':
+          description: Error de validación
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+
+    delete:
+      summary: Elimina un producto por ID
+      description: Elimina un producto existente por su ID
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '204':
+          description: Producto eliminado correctamente
+
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 1
+        name:
+          type: string
+          example: "Producto de ejemplo"
+        description:
+          type: string
+          example: "Descripción del producto"
+        price:
+          type: number
+          format: double
+          example: 99.99
+      required:
+        - name
+        - description
+        - price

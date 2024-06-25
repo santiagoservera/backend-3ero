@@ -1,0 +1,26 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ı¨ñÄJ$72f36e95-05f8-43f1-bbd4-93f9fdbe0f18
+}
+java:S1874#"5Remove this use of "setSigningKey"; it is deprecated.(ÂüÂıüÿÿÿÿ8¹Ğıê„2J$fb096b31-bb59-4d4a-b718-8301ccd0c207
+y
+java:S1874$"6Remove this use of "parseClaimsJws"; it is deprecated.(îœÇ¯8éïıê„2J$698a4820-b34c-4153-a883-5e0d8a0d8163
+r
+java:S1874$"/Remove this use of "getBody"; it is deprecated.(îœÇ¯8éïıê„2J$896486d2-2b64-4f74-ba5c-fb8dffd344de
+•
+java:S6204."RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(£öå»8óÒùê„2J$a8eedc36-7250-4748-8cba-0651b1bffb62
+~
+java:S6437;"6Revoke and change this password, as it is compromised.( şÅ²øÿÿÿÿ8õÒùê„2J$7b714b00-70a8-4055-a507-110173e23e44
+y
+java:S18747"1Remove this use of "setClaims"; it is deprecated.(æõíûúÿÿÿÿ8öÒùê„2J$35305d27-1cd6-4107-af32-33c66edd8593
+u
+java:S18748"2Remove this use of "setSubject"; it is deprecated.(òë8öÒùê„2J$76033e6f-687d-4f4d-baae-b4a0bf5cd562
+v
+java:S18749"3Remove this use of "setIssuedAt"; it is deprecated.(øÔ÷ò8öÒùê„2J$54ea9f5b-381d-4410-8e91-2012c76bcba0
+}
+java:S1874:"5Remove this use of "setExpiration"; it is deprecated.(÷¹¿¸şÿÿÿÿ8öÒùê„2J$d7ea646c-7255-48a2-b291-12f7399f61b7
+x
+java:S1874;"0Remove this use of "signWith"; it is deprecated.( şÅ²øÿÿÿÿ8÷Òùê„2J$7038b155-bec9-4375-b806-013e25f5a9e9
+‚
+java:S1874;":Remove this use of "SignatureAlgorithm"; it is deprecated.( şÅ²øÿÿÿÿ8÷Òùê„2J$2950d8e2-0c07-4c0c-925b-545d9f551174
+‚
+java:S1874;":Remove this use of "SignatureAlgorithm"; it is deprecated.( şÅ²øÿÿÿÿ8÷Òùê„2J$dfbf4e13-81b2-4ac7-99c5-a84bdde952da

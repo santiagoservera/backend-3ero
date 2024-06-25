@@ -1,6 +1,10 @@
 
-‘
-java:S1192"NDefine a constant instead of duplicating this literal "/api/products" 4 times.(‡³é÷8Á†ü1J$a14df4a2-c13f-4eb1-8a56-6a4285dec496
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ı¨ñÄ8Òôë…ü1J$5f18baa9-1dce-4796-928d-89b240464bbe
-~
-java:S6437)"6Revoke and change this password, as it is compromised.(ÇÖÊûÿÿÿÿ8€Ü€†ü1J$4a8484da-25f5-44d6-becb-12dd268032c2
+c
+java:S1192"FDefine a constant instead of duplicating this literal "ADMIN" 4 times.(ó˜§£8“±Êí„2
+k
+java:S1192"NDefine a constant instead of duplicating this literal "/api/products" 4 times.(³÷¹8”±Êí„2
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ı¨ñÄ8»Ğ§ê„2J$b64e50e2-b9c6-4409-b2a9-c921dde65c52
+S
+java:S6437-"6Revoke and change this password, as it is compromised.(§Ü¬…8¦±Êí„2
+S
+java:S64373"6Revoke and change this password, as it is compromised.(ã¾ğ¾8§±Êí„2

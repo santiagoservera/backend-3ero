@@ -1,0 +1,8 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÕŠÑ¶J$b24b7391-001a-469c-874b-b1e27f6c62ee
+‡
+java:S4165"eRemove this useless assignment; "usuario" already holds the assigned value along all execution paths.(¥¶Ûîùÿÿÿÿ8‘úÛë„2
+Q
+java:S1172"/Remove this unused method parameter "username".(Ï«Çöøÿÿÿÿ8šúÛë„2
+Q
+java:S1656"/Remove or correct this useless self-assignment.(¥¶Ûîùÿÿÿÿ8›úÛë„2

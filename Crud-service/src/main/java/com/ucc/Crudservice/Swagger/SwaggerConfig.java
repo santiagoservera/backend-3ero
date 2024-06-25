@@ -1,25 +1,46 @@
 package com.ucc.Crudservice.Swagger;
 
 
-import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+
+
+import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
-import io.swagger.v3.oas.models.info.Contact;
+import io.swagger.v3.oas.models.Operation;
+import io.swagger.v3.oas.models.Paths;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@OpenAPIDefinition
-
-
 public class SwaggerConfig {
     @Bean
-    public OpenAPI api(){
-        return new OpenAPI().info(new Info().title("Api de productos").version("1.0")
-                .contact(new Contact().name("Santiago Servera").email("santiagoservera21@gmail.com"))
-                .license(new License().url("https://github.com/santiagoservera").name("GitHub"))
-                .termsOfService("http://www.example.com").description("Api encargada de realizar peticiones a una base de datos de productos")
-        );
+    public OpenAPI customOpenAPI() {
+        return new OpenAPI()
+                .components(new Components())
+                .info(new Info()
+                        .title("API PRODUCTOS")
+                        .version("1.0")
+                        .description("Documentación Swagger")
+                        .termsOfService("http://swagger.io/terms/")
+                        .license(new License().name("Apache 2.0").url("http://springdoc.org")))
+                .paths(new Paths()
+                        .addPathItem("/products", new io.swagger.v3.oas.models.PathItem()
+                                .get(new Operation()
+                                        .summary("Obtener todos los productos")
+                                        .description("Endpoint para obtener todos los productos disponibles."))
+                                .post(new Operation()
+                                        .summary("Agregar un producto")
+                                        .description("Endpoint para agregar un nuevo producto.")))
+                        .addPathItem("/products/{productId}", new io.swagger.v3.oas.models.PathItem()
+                                .get(new Operation()
+                                        .summary("Obtener producto por ID")
+                                        .description("Endpoint para obtener un producto específico por su ID."))
+                                .put(new Operation()
+                                        .summary("Actualizar producto por ID")
+                                        .description("Endpoint para actualizar un producto por su ID."))
+                                .delete(new Operation()
+                                        .summary("Eliminar producto por ID")
+                                        .description("Endpoint para eliminar un producto por su ID."))));
     }
 }

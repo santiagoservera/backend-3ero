@@ -1,0 +1,20 @@
+
+’
+java:S1192."JDefine a constant instead of duplicating this literal "contenido" 3 times.(†½•şÿÿÿÿ8¹éÂì„2J$497aff93-e5f8-4ea6-9861-052dfc2f0b45
+œ
+java:S1192+"TDefine a constant instead of duplicating this literal "Esta autenticado {}" 3 times.(Ş‡âüÿÿÿÿ8¹éÂì„2J$e6a5d52e-b06b-44e1-a0de-e5af97b05516
+™
+java:S1192)"VDefine a constant instead of duplicating this literal "Datos del Usuario: {}" 3 times.(ó˜³8¹éÂì„2J$c2919b10-2c9e-4a8c-926f-97a275e6ee07
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÑËòòJ$3407b59f-c425-4375-9b53-b86d653b6be2
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÆéÂì„2J$c1d60cc6-940a-44d2-89a0-ad80ec22e5ac
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÆéÂì„2J$36f38ae1-051b-495a-bc5e-c98b00870b3a
+…
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8ÆéÂì„2J$dd2cb9ba-de8e-4b6a-8434-644a5c02d0e6
+n
+java:S1452%"&Remove usage of generic wildcard type.(İ‘½Ùûÿÿÿÿ8ËéÂì„2J$92cf7d52-48d3-4ab9-90e1-90d2c8190c65
+h
+java:S14523"&Remove usage of generic wildcard type.(Óáïc8ÍéÂì„2J$2b583863-7b82-46ac-a921-3a9481913c0f
+i
+java:S1452@"&Remove usage of generic wildcard type.(¨Ôç8ÎéÂì„2J$0f75811c-2e60-473f-9ae0-7d4f324ab47c

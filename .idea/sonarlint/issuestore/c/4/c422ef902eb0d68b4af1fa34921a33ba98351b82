@@ -1,5 +1,23 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(çÁ8Ø®ÖÈø1J$500eb791-6593-4651-bb95-6f2f93b95c72
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(çÁ8ïÖì„2J$20390d21-c2ba-4859-b652-6edb8f892de8
+…
+java:S6813!"BRemove this field injection and use constructor injection instead.(êæÄŞ8çÕ­í„2J$2f46eaa3-21e1-42da-82b6-acc48313a617
+…
+java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄŞ8çÕ­í„2J$b765366c-b9ed-4382-90d1-20afe63f3290
 •
-java:S6204%"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8‹¯ÖÈø1J$22e302b1-cedd-46e5-8558-c65a5d1a8c91
-m	java:S1061"+Replace this use of System.out by a logger.(–×ÙÔ8±¯ÖÈø1J$11f0b5ed-9ece-4ca9-a313-126eb26a5bf7
+java:S6204:"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ìÕ­í„2J$679319e4-2921-4157-a481-62befc5c05fe
+m	java:S106C"+Replace this use of System.out by a logger.(–×ÙÔ8îÕ­í„2J$80981c5f-1ed0-434e-8cd9-13a868100d26
+Š
+java:S1128"HRemove this unused import 'com.ucc.Crudservice.model.AuthenticationReq'.(ĞíÒ 8¢ËÚí„2J$a5cdef70-d13b-466a-af17-354fa4cb7a15
+ˆ
+java:S1128"@Remove this unused import 'com.ucc.Crudservice.model.TokenInfo'.(®Úİúúÿÿÿÿ8¢ËÚí„2J$193c32f5-0a72-45ea-a60d-f067d435bfae
+Š
+java:S1128"BRemove this unused import 'jakarta.annotation.security.PermitAll'.(‡Ñøÿÿÿÿ8³½±í„2J$0edd4cd3-0ccc-4485-8523-55a044e4aaa8
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Qualifier'.(íàÄ®ıÿÿÿÿ8ƒ¸Üí„2
+´
+java:S1128"lRemove this unused import 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken'.(ÖÆ„Ùüÿÿÿÿ8¢ËÚí„2J$35b974d4-2155-476c-ac95-2afd6d30bcea
+™
+java:S1128"VRemove this unused import 'org.springframework.security.core.userdetails.UserDetails'.(ÊÁ¥8¢ËÚí„2J$ca0cdae3-0fad-4719-8075-d1120db534f7
+z
+java:S1128"]Remove this unused import 'org.springframework.security.core.userdetails.UserDetailsService'.(¶…¥à8„¸Üí„2
